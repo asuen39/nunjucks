@@ -1,0 +1,23 @@
+{
+  "name": "nunjucks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asuen39/nunjucks.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/asuen39/nunjucks/issues"
+  },
+  "homepage": "https://github.com/asuen39/nunjucks#readme",
+  "devDependencies": {
+    "http": "^0.0.1-security"
+  }
+}
