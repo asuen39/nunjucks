@@ -7,6 +7,15 @@
     <title>Nunjucks-test</title>
 </head>
 <body>
-    <h1>{{ message }}</h1>
+    <h2>1. 変数の表示</h2>
+    <!--実行時に提供されるデータオブジェクト内のキーとして対応します。下記コードで変数を表示できます-->
+    <!--<p>{{ message }}</p>-->
+    <p>Name: {{ person.message }}</p>
+
+    <h2>2. オブジェクトのプロパティへのアクセス</h2>
+    <!--テンプレート内でpersonオブジェクトのプロパティにアクセスする-->
+    <p>Name: {{ person.name }}</p>
+    <p>Age: {{ person.age }}</p>
+
 </body>
 </html>

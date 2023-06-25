@@ -10,7 +10,19 @@ nunjucks.configure('.', {
 });
 
 app.get('', (req, res) => {
-    res.render('index.html', { message: 'Hello, World!' });
+
+    //1. 設定された変数に対してメッセージを送る。
+    //res.render('index.html', { message: 'nunjucksテンプレートがローカルで起動出来た。' });
+
+    //2. オブジェクトのプロパティへのアクセ
+    const person = {
+        message: 'nunjucksテンプレートがローカルで起動出来た。',
+        name: 'John',
+        age: 30
+    };
+
+    // テンプレートにデータを渡す
+    res.render('index.html', { person });
 });
 
 app.listen(port, () => {
