@@ -5,6 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nunjucks-test</title>
+    <style>
+        table {
+            border: 1px solid #000;
+        }
+        th, td {
+            border: 1px solid #000;
+        }
+    </style>
 </head>
 <body>
     <h2>1. 変数の表示</h2>
@@ -16,6 +24,19 @@
     <!--テンプレート内でpersonオブジェクトのプロパティにアクセスする-->
     <p>Name: {{ person.name }}</p>
     <p>Age: {{ person.age }}</p>
+
+    <table>
+        <tr>
+            <th>フィルター</th>
+        </tr>
+        <tr>
+            <td>フィルターは本質的には変数に適用できる関数です。これらはパイプ演算子 (|) を使用して呼び出され、引数を取ることができます。</td>
+        </tr>
+        <tr>
+            <!-- uppercase フィルターを適用 -->
+            <td>{{ message | uppercase }}</td>
+        </tr>
+    </table>
 
 </body>
 </html>
