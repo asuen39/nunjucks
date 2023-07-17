@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Page 2</h2>
+
+<h3>テンプレートタグ: IF</h3>
+<p>
+    {% if greeting %}
+      こんにちは！
+    {% else %}
+      テストです。
+    {% endif %}
+</p>
+
+<h3>テンプレートタグ: for</h3>
+{% for item in items %}
+    <p>{{ item }}</p>
+{% endfor %}
+
+{% endblock %}
