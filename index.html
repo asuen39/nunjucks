@@ -36,7 +36,20 @@
             <!-- uppercase フィルターを適用 -->
             <td>{{ message | uppercase }}</td>
         </tr>
+        <tr>
+            <!-- 文字の反転 -->
+            <td>{{ message | reverse }}</td>
+        </tr>
+        <tr>
+            <!-- 文字列を整数へ変換する -->
+            <td>{{ age2 | int }}</td>
+        </tr>
     </table>
+
+    <h2>テンプレートの継承</h2>
+    <!-- base.htmlの変数を利用する -->
+    <p><a href="./page2">テンプレートの継承はこちらから確認</a></p>
+    
 
 </body>
 </html>
